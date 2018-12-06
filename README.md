@@ -2,6 +2,10 @@
 
 Zipkin-lens is an alternative UI for [OpenZipkin](https://github.com/openzipkin/zipkin), which based on React, Netflix/vizceral and chartjs.
 
+Here are a couple example screen shots:
+
+<img width="1920" alt="Search Screen" src="https://user-images.githubusercontent.com/64215/49579677-4602de00-f990-11e8-81b7-dd782ce91227.png">
+<img width="1920" alt="Trace Detail Screen" src="https://user-images.githubusercontent.com/64215/49579684-4d29ec00-f990-11e8-8799-5c53a503413e.png">
 
 ## Quick start
 

@@ -1,3 +1,9 @@
+# Move in progress
+
+This codebase is being moved to https://github.com/openzipkin/zipkin, to be bundled in the default server.
+
+Please see https://github.com/openzipkin/zipkin/pull/2316 for current status.
+
 # Zipkin Lens
 
 Zipkin-lens is an alternative UI for [OpenZipkin](https://github.com/openzipkin/zipkin), which based on React, Netflix/vizceral and chartjs.

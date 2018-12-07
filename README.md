@@ -1,8 +1,6 @@
-# Move in progress
+# Note
 
-This codebase is being moved to https://github.com/openzipkin/zipkin, to be bundled in the default server.
-
-Please see https://github.com/openzipkin/zipkin/pull/2316 for current status.
+This codebase is moved to https://github.com/openzipkin/zipkin/tree/master/zipkin-lens, to be bundled in the default server. Please raise issue and pull request there.
 
 # Zipkin Lens
 

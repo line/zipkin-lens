@@ -44,7 +44,7 @@ class TraceId extends React.Component {
     const { history } = this.props;
     const { traceId } = this.state;
     if (e.key === 'Enter') {
-      history.push(`/zipkin/trace/${traceId}`);
+      history.push(`/trace/${traceId}`);
     }
   }
 

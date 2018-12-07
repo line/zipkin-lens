@@ -25,8 +25,8 @@ const propTypes = {
 };
 
 const Header = ({ location }) => {
-  const isBrowserSelected = location.pathname === '/zipkin';
-  const isDependenciesSelected = location.pathname === '/zipkin/dependencies';
+  const isBrowserSelected = location.pathname === '/';
+  const isDependenciesSelected = location.pathname === '/dependencies';
 
   return (
     <header className="header">
@@ -41,7 +41,7 @@ const Header = ({ location }) => {
         <div className="header__menu">
           <div className={`header__option ${isBrowserSelected ? 'selected' : ''}`}>
             <Link
-              to={{ pathname: '/zipkin' }}
+              to={{ pathname: '/' }}
               className={`header__option-link ${isBrowserSelected ? 'selected' : ''}`}
             >
               <i className="fas fa-search header__option-icon" />
@@ -50,7 +50,7 @@ const Header = ({ location }) => {
           </div>
           <div className={`header__option ${isDependenciesSelected ? 'selected' : ''}`}>
             <Link
-              to={{ pathname: '/zipkin/dependencies' }}
+              to={{ pathname: '/dependencies' }}
               className={`header__option-link ${isDependenciesSelected ? 'selected' : ''}`}
             >
               <i className="fas fa-code-branch header__option-icon" />

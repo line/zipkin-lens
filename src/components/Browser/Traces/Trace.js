@@ -154,7 +154,7 @@ class Trace extends React.Component {
           </div>
           <div className="traces__trace-link-wrapper">
             <Link
-              to={{ pathname: `/zipkin/trace/${traceSummary.traceId}` }}
+              to={{ pathname: `/trace/${traceSummary.traceId}` }}
             >
               <Button className="traces__trace-link">
                 <i className="fas fa-door-open" />

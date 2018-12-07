@@ -160,7 +160,7 @@ class Dependencies extends React.Component {
                 </div>
                 <div className="dependencies__search-button-wrapper">
                   <Link to={{
-                    pathname: '/zipkin/dependencies',
+                    pathname: '/dependencies',
                     search: buildQueryParameters({
                       endTs: endTs.valueOf(),
                       lookback: endTs.valueOf() - startTs.valueOf(),

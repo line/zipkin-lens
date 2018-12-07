@@ -16,7 +16,7 @@
 
 import React from 'react';
 import { Provider } from 'react-redux';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
 
 import Layout from './Layout';
 import BrowserContainer from '../../containers/Browser/BrowserContainer';
@@ -26,11 +26,11 @@ import configureStore from '../../store/configure-store';
 
 const App = () => (
   <Provider store={configureStore()}>
-    <BrowserRouter>
+    <Router>
       <div>
         <Route
           exact
-          path="/zipkin"
+          path={["", "/"]}
           render={props => (
             <Layout {...props}>
               <BrowserContainer {...props} />
@@ -39,7 +39,7 @@ const App = () => (
         />
         <Route
           exact
-          path="/zipkin/trace/:traceId"
+          path="/trace/:traceId"
           render={props => (
             <Layout {...props}>
               <TraceContainer {...props} />
@@ -48,7 +48,7 @@ const App = () => (
         />
         <Route
           exact
-          path="/zipkin/dependencies"
+          path="/dependencies"
           render={props => (
             <Layout {...props}>
               <DependenciesContainer {...props} />
@@ -56,7 +56,7 @@ const App = () => (
           )}
         />
       </div>
-    </BrowserRouter>
+    </Router>
   </Provider>
 );
 

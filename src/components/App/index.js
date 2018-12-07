@@ -16,7 +16,7 @@
 
 import React from 'react';
 import { Provider } from 'react-redux';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Redirect } from 'react-router-dom';
 
 import Layout from './Layout';
 import BrowserContainer from '../../containers/Browser/BrowserContainer';
@@ -28,6 +28,13 @@ const App = () => (
   <Provider store={configureStore()}>
     <BrowserRouter>
       <div>
+        <Route
+          exact
+          path="/"
+          render={() => (
+            <Redirect to="/zipkin" />
+          )}
+        />
         <Route
           exact
           path="/zipkin"
